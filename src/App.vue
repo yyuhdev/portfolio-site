@@ -153,6 +153,7 @@ export default {
         { name: 'Redis', icon: 'devicon-redis-plain' },
         { name: 'Go', icon: 'devicon-go-plain' },
         { name: 'Docker', icon: 'devicon-docker-plain' },
+        { name: 'Kubernetes', icon: 'devicon-kubernetes-plain' }
       ],
       projects: {
         portfolio: {

@@ -2,42 +2,53 @@
   <header>
   </header>
 
-  <main class="bg-black text-white font-mono min-h-screen p-8">
+  <main class="bg-black text-white font-mono min-h-screen px-4 py-6 sm:p-8">
     <div class="mb-8 text-green-500">
       [yyuh@portfolio ~] $ kubectl logs -it yyuh
     </div>
 
     <div class="section header text-center mb-12">
-      <pre class="whitespace-pre text-green-500 text-lg leading-tight">
-██╗   ██╗██╗   ██╗██╗   ██╗██╗  ██╗██████╗ ███████╗██╗   ██╗
-╚██╗ ██╔╝╚██╗ ██╔╝██║   ██║██║  ██║██╔══██╗██╔════╝██║   ██║
- ╚████╔╝  ╚████╔╝ ██║   ██║███████║██║  ██║█████╗  ██║   ██║
-  ╚██╔╝    ╚██╔╝  ██║   ██║██╔══██║██║  ██║██╔══╝  ╚██╗ ██╔╝
-  ██║      ██║   ╚██████╔╝██║  ██║██████╔╝███████╗ ╚████╔╝
- ╚═╝      ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚═════╝ ╚══════╝  ╚═══╝
+      <pre
+          class="whitespace-pre text-green-500 leading-tight
+         text-xs sm:text-xs md:text-lg">
+
+██╗   ██╗██╗   ██╗██╗   ██╗██╗  ██╗
+╚██╗ ██╔╝╚██╗ ██╔╝██║   ██║██║  ██║
+ ╚████╔╝  ╚████╔╝ ██║   ██║███████║
+  ╚██╔╝    ╚██╔╝  ██║   ██║██╔══██║
+   ██║      ██║   ╚██████╔╝██║  ██║
+   ╚═╝      ╚═╝    ╚═════╝ ╚═╝  ╚═╝
 
 Java Engineer | Backend & Distributed Systems</pre>
     </div>
 
     <div class="max-w-4xl mx-auto mb-16">
-      <div class="border border-green-500 p-6 mb-8">
+      <div class="border border-green-500 p-4 sm:p-6 mb-8">
         <h2 class="text-green-500 text-xl mb-4">[ ABOUT ]</h2>
         <p class="text-gray-300 mb-4">
-          > I'm yyuh, a 16-yo software engineer from Germany. I have been working with Java for the past 3 years and I love it ever since.
+          > I'm yyuh, a 16-yo software engineer from Germany. I have been working with Java for the past 3 years and I
+          love it ever since.
         </p>
         <div class="flex flex-wrap gap-3 mt-4">
-          <span v-for="tech in techStack" :key="tech.name"
-                class="px-3 py-1 bg-green-900 bg-opacity-20 border border-green-700 text-green-400 text-sm">
+          <span
+              v-for="tech in techStack"
+              :key="tech.name"
+              class="px-3 py-1 bg-green-900 bg-opacity-20
+         border border-green-700 text-green-400
+         text-xs sm:text-sm">
             {{ tech.name }}
           </span>
         </div>
       </div>
 
-      <div class="border border-green-500 p-6 mb-8">
+      <div class="border border-green-500 p-4 sm:p-6 mb-8">
         <h2 class="text-green-500 text-xl mb-4">[ PROJECTS ]</h2>
         <div class="space-y-4">
-          <div v-for="(project, key) in projects" :key="key"
-               class="border-l-2 border-cyan-500 pl-4">
+          <div
+              v-for="(project, key) in projects"
+              :key="key"
+              class="border-l-2 border-cyan-500 pl-4 py-2"
+          >
             <h3 class="text-cyan-400 font-bold mb-2">
               {{ project.name }}
             </h3>
@@ -50,7 +61,7 @@ Java Engineer | Backend & Distributed Systems</pre>
         </div>
       </div>
 
-      <div class="border border-green-500 p-6">
+      <div class="border border-green-500 p-4 sm:p-6 mb-8">
         <h2 class="text-green-500 text-xl mb-4">[ CONNECT ]</h2>
         <div class="space-y-2">
           <a v-for="(social, key) in links" :key="key"
@@ -72,16 +83,16 @@ export default {
     return {
       showMenu: false,
       techStack: [
-        { name: 'Java' },
-        { name: 'Kubernetes' },
-        { name: 'Redis' },
-        { name: 'JavaScript' },
-        { name: 'PHP' },
-        { name: 'Go' },
-        { name: 'Nuxt.js' },
-        { name: 'Laravel' },
-        { name: 'TailwindCSS' },
-        { name: 'Docker' }
+        {name: 'Java'},
+        {name: 'Kubernetes'},
+        {name: 'Redis'},
+        {name: 'JavaScript'},
+        {name: 'PHP'},
+        {name: 'Go'},
+        {name: 'Nuxt.js'},
+        {name: 'Laravel'},
+        {name: 'TailwindCSS'},
+        {name: 'Docker'}
       ],
       projects: {
         portfolio: {
@@ -96,8 +107,8 @@ export default {
         }
       },
       links: {
-        github: { link: 'https://github.com/yyuhdev' },
-        email: { link: 'mailto:yyuhdev@gmail.com' },
+        github: {link: 'https://github.com/yyuhdev'},
+        email: {link: 'mailto:yyuhdev@gmail.com'},
       },
       pages: {
         projects: {title: 'Projects', destination: '#projects'},

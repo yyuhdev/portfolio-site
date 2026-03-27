@@ -61,7 +61,7 @@
           <div class="mb-0.5"><span class="text-ctp-blue"> Framework </span> <span class="text-ctp-text">→ Vue, Nuxt, Quarkus, Spring</span></div>
           <div class="mb-0.5"><span class="text-ctp-blue"> Infra </span> <span class="text-ctp-text">→ Docker, K8s, Helm</span></div>
           <div class="mb-0.5"><span class="text-ctp-blue"> CI/CD </span> <span class="text-ctp-text">→ GitHub Actions, GitLab CI</span></div>
-          <div class="mb-0.5"><span class="text-ctp-blue"> Messaging </span> <span class="text-ctp-text">→ Redis, Kafka</span></div>
+          <div class="mb-0.5"><span class="text-ctp-blue"> Messaging </span> <span class="text-ctp-text">→ Redis, Kafka, NATS</span></div>
         </div>
       </div>
 

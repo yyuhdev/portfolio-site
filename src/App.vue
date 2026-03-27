@@ -1,5 +1,5 @@
 <template>
-  <main class="min-h-screen bg-ctp-base font-mono">
+  <main class="min-h-screen bg-ctp-base font-mono flex flex-col">
     <div class="bg-ctp-base border-b border-ctp-base flex items-center px-2 py-1 overflow-x-auto">
       <div class="flex items-center gap-1 bg-ctp-blue text-ctp-base px-2 sm:px-3 py-0.5 font-bold text-xs sm:text-sm shrink-0">
         <span>1</span>
@@ -26,7 +26,7 @@
       </div>
     </div>
 
-    <div class="px-3 sm:px-4 py-2 text-xs sm:text-sm leading-relaxed">
+    <div class="px-3 sm:px-4 py-2 text-xs sm:text-sm leading-relaxed flex-grow">
 
       <span class="text-fish-teal">~</span>
       <div class="flex items-center mb-2">
@@ -97,6 +97,36 @@
       </div>
 
     </div>
+
+    <div class="px-3 sm:px-4 py-2">
+      <div class="flex flex-wrap gap-2 items-center">
+        <a href="https://yyuh.beer/" target="_blank">
+         <img src="/banners/yyuh.gif" alt="yyuh" class="h-8">
+        </a>
+        <a href="https://www.vim.org/" target="_blank">
+          <img src="/banners/vim-tenor.gif" alt="Vi Vim" class="h-8">
+        </a>
+        <a href="https://www.gnu.org/" target="_blank">
+          <img src="/banners/gnu-linux.gif" alt="GNU/Linux" class="h-8">
+        </a>
+        <a href="https://www.mozilla.org/firefox/" target="_blank">
+          <img src="/banners/firefox4.gif" alt="Firefox" class="h-8">
+        </a>
+        <img src="/banners/anythingbut.gif" alt="Anything But Chrome" class="h-8">
+        <img src="/banners/defund_badge.gif" alt="Defund Police" class="h-8">
+        <img src="/banners/java2.gif" alt="Get Java" class="h-8">
+        <a href="https://artixlinux.org/" target="_blank">
+         <img src="/banners/Artix.gif" alt="yyuh" class="h-8">
+        </a>
+        <img src="/banners/antinazi.gif" alt="Anti Nazi" class="h-8">
+        <a href="https://mod.gov.ua/" target="_blank">
+         <img src="/banners/nowar.png" alt="yyuh" class="h-8">
+        </a>
+        <img src="/banners/acab2.gif" alt="yyuh" class="h-8">
+        <img src="/banners/palestine.gif" alt="yyuh" class="h-8">
+      </div>
+    </div>
+
   </main>
 </template>
 

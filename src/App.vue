@@ -1,124 +1,105 @@
 <template>
-  <header>
-  </header>
+  <main class="min-h-screen bg-ctp-base font-mono">
+    <div class="bg-ctp-base border-b border-ctp-base flex items-center px-2 py-1">
+      <div class="flex items-center gap-1 bg-ctp-blue text-ctp-base px-3 py-0.5 font-bold text-sm">
+        <span>1</span>
+        <span class="mx-1"></span>
+        <span>portfolio</span>
+      </div>
+      
+      <div class="flex items-center gap-1 bg-ctp-surface1 text-ctp-overlay0 px-3 py-0.5 text-sm">
+        <span>2</span>
+        <span class="mx-1"></span>
+        <span>nvim</span>
+      </div>
+      
+      <div class="flex items-center gap-1 bg-ctp-surface1 text-ctp-overlay0 px-3 py-0.5 text-sm">
+        <span>3</span>
+        <span class="mx-1"></span>
+        <span>fish</span>
+      </div>
 
-  <main class="bg-black text-white font-mono min-h-screen px-4 py-6 sm:p-8">
-    <div class="mb-8 text-green-500">
-      [yyuh@portfolio ~] $ kubectl logs -it yyuh
+      <div class="flex items-center gap-1 bg-ctp-surface1 text-ctp-overlay0 px-3 py-0.5 text-sm">
+        <span>4</span>
+        <span class="mx-1"></span>
+        <span>npm</span>
+      </div>
     </div>
 
-    <div class="section header text-center mb-12">
-      <pre
-          class="whitespace-pre text-green-500 leading-tight
-         text-xs sm:text-xs md:text-lg">
+    <div class="px-2 py-2 text-sm leading-relaxed" style="padding: 8px;">
 
-██╗   ██╗██╗   ██╗██╗   ██╗██╗  ██╗
-╚██╗ ██╔╝╚██╗ ██╔╝██║   ██║██║  ██║
- ╚████╔╝  ╚████╔╝ ██║   ██║███████║
-  ╚██╔╝    ╚██╔╝  ██║   ██║██╔══██║
-   ██║      ██║   ╚██████╔╝██║  ██║
-   ╚═╝      ╚═╝    ╚═════╝ ╚═╝  ╚═╝
+      <span class="text-fish-teal">~</span>
+      <div class="flex items-center mb-2">
+        <span class="text-fish-mauve font-bold">❯</span>
+        <span class="text-white ml-2">fastfetch</span>
+      </div>
 
-Java Engineer | Backend & Distributed Systems</pre>
-    </div>
+      <div class="flex gap-8 text-ctp-text" style="line-height: 1.2;">
+        <pre class="text-ctp-blue" style="font-size: 1rem; line-height: 1.3;">  ⠀⠀⠀⣠⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⠀⠀
+  ⠀⠀⢰⠏⠙⠳⣄⠀⠀⠀⠀⠀⠀⠀⠀⣤⡀⠀⠀⠀⠀⠀⠀⠀⢀⡴⠚⠉⠈⣷⠀
+  ⠀⢀⡟⠀⠀⠀⠈⠹⣆⣀⣠⣤⠤⠤⣤⣧⠉⠳⣄⠀⠀⠀⣀⡶⠋⠀⠀⠀⠀⢸⡀
+  ⠀⢸⠇⠀⠀⠀⠀⠀⠈⠙⢦⡀⠀⠀⠀⠈⠀⠀⠙⢦⣀⡶⠋⠀⠀⠀⠀⠀⠀⢸⡇
+  ⠀⣞⠀⠀⠀⠀⠀⠀⠀⠀⠈⠃⠀⠀⠀⠀⠀⠀⠀⠘⡿⠃⠀⠀⠀⠀⠀⠀⠀⢸⠇
+  ⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⠀
+  ⠀⣧⠀⠀⠀⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠀⣀⠀⠀⠀⠀⠀⢠⡏⠀
+  ⠀⢹⡄⠀⠀⠙⠛⠻⠶⢦⣤⣄⠀⠀⠀⠀⠀⣤⣶⡿⠿⠟⠿⠂⠀⠀⠀⢠⡞⠀⠀
+  ⢀⣀⠻⣤⠀⠀⣠⣤⣶⠾⠛⠁⢠⡴⠦⠄⠀⠉⠛⠻⠿⣶⣦⣤⠀⠠⠴⠟⠛⣶⠀
+  ⠸⡏⠉⠉⢁⡀⠈⡁⠀⠀⠀⠀⠀⢀⡀⠀⠀⢀⡀⠀⠀⢠⠟⣷⣠⠖⠀⣴⠚⠁⠀
+  ⠀⠙⢷⡜⠙⢧⡞⠕⠀⠀⠺⣤⡶⠋⠙⠓⢲⡞⠁⠀⠀⠀⠀⠛⠁⠀⠀⠘⣧⠀⠀
+  ⠀⢠⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⡄⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⣀⡶⣤⠤⡼⠀⠀
+  ⠀⣼⣠⡴⠶⣄⣶⣄⣀⠀⠀⠀⠈⢧⡄⠀⣼⠀⠀⠀⢀⣀⣠⠴⠋⠁⠉⠀⠁⠀⠀
+  ⠀⠀⠀⠀⠀⠀⠹⣆⠉⠛⠦⠀⠀⠀⠙⠋⠁⠀⠀⠀⠻⣅⠀⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⠀⣠⠞⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣧⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⠸⢧⣠⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢷⠀⠀⠀⠀⠀⠀⠀</pre>
 
-    <div class="max-w-4xl mx-auto mb-16">
-      <div class="border border-green-500 p-4 sm:p-6 mb-8">
-        <h2 class="text-green-500 text-xl mb-4">[ ABOUT ]</h2>
-        <p class="text-gray-300 mb-4">
-          > I'm yyuh, a 16-yo software engineer from Germany. I have been working with Java for the past 3 years and I
-          love it ever since.
-        </p>
-        <div class="flex flex-wrap gap-3 mt-4">
-          <span
-              v-for="tech in techStack"
-              :key="tech.name"
-              class="px-3 py-1 bg-green-900 bg-opacity-20
-         border border-green-700 text-green-400
-         text-xs sm:text-sm">
-            {{ tech.name }}
-          </span>
+        <div style="line-height: 1.5;">
+          <div class="mb-1 mt-20"><span class="text-ctp-text">yyuh@yyuhs-pc</span></div>
+          <div class="mb-2"></div>
+          <div class="mb-0.5"><span class="text-ctp-blue"> OS </span> <span class="text-ctp-text">→ Fedora Linux 43 (Workstation Edition) x86_64</span></div>
+          <div class="mb-0.5"><span class="text-ctp-blue"> DE </span> <span class="text-ctp-text">→ Hyprland</span></div>
+          <div class="mb-0.5"><span class="text-ctp-blue"> Lang </span> <span class="text-ctp-text">→ Java, PHP, Protobuf, Go, JS/TS</span></div>
+          <div class="mb-0.5"><span class="text-ctp-blue"> DBs </span> <span class="text-ctp-text">→ MongoDB, InfluxDB, MySQL, PostgreSQL, Redis (DragonflyDB), S3</span></div>
+          <div class="mb-0.5"><span class="text-ctp-blue"> Framework </span> <span class="text-ctp-text">→ NuxtJS, VueJS, Quarkus, SpringBoot, Laravel</span></div>
+          <div class="mb-0.5"><span class="text-ctp-blue"> Infra </span> <span class="text-ctp-text">→ Docker, Kubernetes, Helm</span></div>
+          <div class="mb-0.5"><span class="text-ctp-blue"> CI/CD </span> <span class="text-ctp-text">→ GitHub Actions, GitLab CI/CD</span></div>
+          <div class="mb-0.5"><span class="text-ctp-blue"> Messaging </span> <span class="text-ctp-text">→ DragonflyDB, Redis, Kafka</span></div>
         </div>
       </div>
 
-      <div class="border border-green-500 p-4 sm:p-6 mb-8">
-        <h2 class="text-green-500 text-xl mb-4">[ PROJECTS ]</h2>
-        <div class="space-y-4">
-          <div
-              v-for="(project, key) in projects"
-              :key="key"
-              class="border-l-2 border-cyan-500 pl-4 py-2"
-          >
-            <h3 class="text-cyan-400 font-bold mb-2">
-              {{ project.name }}
-            </h3>
-            <p class="text-gray-400 mb-2">{{ project.desc }}</p>
-            <a :href="project.link" target="_blank"
-               class="text-green-500 hover:text-green-400 text-sm">
-              → View Project
-            </a>
+      <span class="text-fish-teal">~</span>
+      <div class="flex items-center mb-2">
+        <span class="text-fish-mauve font-bold">❯</span>
+        <span class="text-white ml-2">cat info.md</span>
+      </div>
+
+      <div class="text-ctp-text mb-4" style="line-height: 1.6;">
+        <div class="mb-3">
+          <span class="text-ctp-mauve font-bold"># Links</span>
+        </div>
+        <div class="mb-2">
+          <div>
+            <a href="https://gitlab.revived.club/yyuh" target="_blank" class="text-ctp-blue underline">GitLab</a>
+          </div>
+          <div>
+            <a href="https://github.com/yyuhdev" target="_blank" class="text-ctp-blue underline">GitHub</a>
+          </div>
+          <div>
+            <a href="mailto:yyuhdev@gmail.com" target="_blank" class="text-ctp-blue underline">Email</a>
           </div>
         </div>
       </div>
 
-      <div class="border border-green-500 p-4 sm:p-6 mb-8">
-        <h2 class="text-green-500 text-xl mb-4">[ CONNECT ]</h2>
-        <div class="space-y-2">
-          <a v-for="(social, key) in links" :key="key"
-             :href="social.link" target="_blank"
-             class="block hover:bg-green-900/50 hover:bg-opacity-20 p-3 transition-all group">
-            <span class="text-green-500 group-hover:text-green-400">→</span>
-            <span class="text-gray-400 ml-2 capitalize group-hover:text-green-300">{{ key }}</span>
-            <span class="text-gray-600 ml-2 text-sm group-hover:text-gray-400">{{ social.link }}</span>
-          </a>
+      <div class="mt-4">
+          <span class="text-fish-teal">~</span>
+        <div class="flex items-center">
+          <span class="text-fish-mauve font-bold">❯</span>
+          <span class="w-2 h-5 bg-white ml-2"></span>
         </div>
       </div>
+
     </div>
   </main>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      showMenu: false,
-      techStack: [
-        {name: 'Java'},
-        {name: 'Kubernetes'},
-        {name: 'Redis'},
-        {name: 'JavaScript'},
-        {name: 'PHP'},
-        {name: 'Go'},
-        {name: 'Nuxt.js'},
-        {name: 'Laravel'},
-        {name: 'TailwindCSS'},
-        {name: 'Docker'}
-      ],
-      projects: {
-        portfolio: {
-          name: 'Revived.club',
-          desc: 'Minecraft Minigames server built using Java, Redis & Kubernetes.',
-          link: 'https://github.com/Revived-club/revived-duels',
-        },
-        easySQL: {
-          name: 'EasyMySQL',
-          desc: 'Simple MySQL Wrapper for Bukkit Plugins using the DAO pattern.',
-          link: 'https://github.com/yyuhdev/EasyMySQL',
-        }
-      },
-      links: {
-        github: {link: 'https://github.com/yyuhdev'},
-        email: {link: 'mailto:yyuhdev@gmail.com'},
-      },
-      pages: {
-        projects: {title: 'Projects', destination: '#projects'},
-        about: {title: 'About', destination: '#about'},
-        home: {title: 'Home', destination: '#home'},
-      },
-    };
-  },
-};
-</script>
 
 <style scoped>
 </style>

@@ -1,5 +1,127 @@
 @import "tailwindcss";
 
+/* Catppuccin Mocha Theme (Tmux) */
+@theme {
+    /* Base colors - Mocha */
+    --color-ctp-base: #1e1e2e;
+    --color-ctp-mantle: #181825;
+    --color-ctp-crust: #11111b;
+    
+    /* Surface colors - Mocha */
+    --color-ctp-surface0: #313244;
+    --color-ctp-surface1: #45475a;
+    --color-ctp-surface2: #585b70;
+    
+    /* Overlay colors - Mocha */
+    --color-ctp-overlay0: #6c7086;
+    --color-ctp-overlay1: #7f849c;
+    --color-ctp-overlay2: #9399b2;
+    
+    /* Text colors - Mocha */
+    --color-ctp-text: #cdd6f4;
+    --color-ctp-subtext0: #a6adc8;
+    --color-ctp-subtext1: #bac2de;
+    
+    /* Accent colors - Mocha */
+    --color-ctp-lavender: #b4befe;
+    --color-ctp-blue: #89b4fa;
+    --color-ctp-sapphire: #74c7ec;
+    --color-ctp-sky: #89dceb;
+    --color-ctp-teal: #94e2d5;
+    --color-ctp-green: #a6e3a1;
+    --color-ctp-yellow: #f9e2af;
+    --color-ctp-peach: #fab387;
+    --color-ctp-maroon: #eba0ac;
+    --color-ctp-red: #f38ba8;
+    --color-ctp-mauve: #cba6f7;
+    --color-ctp-pink: #f5c2e7;
+    --color-ctp-flamingo: #f2cdcd;
+    --color-ctp-rosewater: #f5e0dc;
+
+    /* Fish Shell Colors - Macchiato */
+    --color-fish-mauve: #c6a0f6;
+    --color-fish-teal: #8bd5ca;
+    --color-fish-text: #cad3f5;
+    --color-fish-surface2: #5b6078;
+    --color-fish-red: #ed8796;
+    --color-fish-green: #a6da95;
+}
+
 html {
     scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-ctp-base);
+    font-family: 'JetBrains Mono', 'Courier New', monospace;
+}
+
+/* Custom scrollbar with Catppuccin theme */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-ctp-mantle);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-ctp-surface1);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-ctp-surface2);
+}
+
+/* Terminal cursor blink animation */
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+.cursor-blink {
+    animation: blink 1s infinite;
+}
+
+/* Glow effect for terminal elements */
+.terminal-glow {
+    text-shadow: 0 0 10px currentColor;
+}
+
+/* Scanline effect for retro terminal feel */
+.scanlines::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.15),
+        rgba(0, 0, 0, 0.15) 1px,
+        transparent 1px,
+        transparent 2px
+    );
+    pointer-events: none;
+    z-index: 10;
+}
+
+/* Tmux tab separator arrows */
+.tmux-arrow {
+    position: relative;
+}
+
+.tmux-arrow::after {
+    content: '';
+    position: absolute;
+    right: -8px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 24px 8px;
+    border-color: transparent transparent currentColor transparent;
 }

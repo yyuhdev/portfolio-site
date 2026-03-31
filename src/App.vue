@@ -65,7 +65,7 @@ const tabs = [
             <div class="mb-0.5"><span class="text-ctp-blue"> Lang </span> <span class="text-ctp-text">→ Java, PHP, Go, JS/TS</span></div>
             <div class="mb-0.5"><span class="text-ctp-blue"> DBs </span> <span class="text-ctp-text">→ MongoDB, MySQL, PostgreSQL, Redis</span></div>
             <div class="mb-0.5"><span class="text-ctp-blue"> Framework </span> <span class="text-ctp-text">→ Vue, Nuxt, Quarkus, Spring</span></div>
-            <div class="mb-0.5"><span class="text-ctp-blue"> Infra </span> <span class="text-ctp-text">→ Docker, K8s, Helm, Talos Linux</span></div>
+            <div class="mb-0.5"><span class="text-ctp-blue"> Infra </span> <span class="text-ctp-text">→ Docker, K8s, Helm, Talos Linux, Tailscale</span></div>
             <div class="mb-0.5"><span class="text-ctp-blue"> CI/CD </span> <span class="text-ctp-text">→ GitHub Actions, GitLab CI, Jenkins</span></div>
             <div class="mb-0.5"><span class="text-ctp-blue"> Messaging </span> <span class="text-ctp-text">→ Redis, Kafka, NATS</span></div>
           </div>
